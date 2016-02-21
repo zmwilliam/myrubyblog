@@ -35,6 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #attr_accessible rails 4 compatibility
 gem 'protected_attributes'
+gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
