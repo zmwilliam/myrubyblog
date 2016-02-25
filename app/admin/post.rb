@@ -12,6 +12,12 @@ ActiveAdmin.register Post do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
-
+  index do 
+    column :title
+    column "Author", :admin_user
+    column :category
+    column :created_at
+    column :actions
+  end
+  permit_params :admin_user_id
 end
