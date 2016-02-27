@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class PostTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "If title is there and body is long enought" do
+    post = Post.new(:title => "Some title", :body => "Some body longer than ten")
+    assert post.valid?
+  end
 end
